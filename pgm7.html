@@ -1,0 +1,29 @@
+<html>
+<body><br>
+<center> <div class="content" id="contentBox">
+        SEE ME!!!!
+</div></center>
+<br><br>
+<center> <div id="hoverContent">
+        <img src="img.jpg" width="400px" height="300px">
+        <p>I LIKE  MY SIMPLE LIFE<br>
+	   JUST EATING AND SLEEPING</p>
+    </div></center>
+
+    <script>
+        
+        const contentBox = document.getElementById('contentBox');
+        const hoverContent = document.getElementById('hoverContent');
+
+        
+        contentBox.addEventListener('mouseover', function() {
+            hoverContent.style.display = 'block'; 
+        });
+
+        contentBox.addEventListener('mouseout', function() {
+            hoverContent.style.display = 'none'; 
+        });
+    </script>
+
+</body>
+</html>
